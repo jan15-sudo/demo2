@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Restaurant Contact Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">Name:*</label>
+                <div class="name-fields">
+                    <input type="text" id="first-name" name="first-name" placeholder="First" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone number:*</label>
+                <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
+            </div>
+
+            <div class="form-group">
+                <label>Have you tasted our dishes?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="tasted" value="yes"> Yes</label>
+                    <label><input type="radio" name="tasted" value="no"> No</label>
+                    <label><input type="radio" name="tasted" value="other"> Other:</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">What can we do for you?*</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">SUBMIT FORM</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
